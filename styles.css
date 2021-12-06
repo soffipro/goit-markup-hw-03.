@@ -1,0 +1,230 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-button: #188ce8;
+  --text-white-color: #ffffff;
+
+  --background-color: #e5e5e5;
+  --hero-background-color: #2f303a;
+  --second-accent-color: #000000;
+  --filter-background: #f5f4fa;
+}
+html {
+ box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* site nav */
+.logo {
+  color: var(--second-accent-color);
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+.accent {
+  color: var(--accent-color);
+}
+.site-nav .link,
+.auth-nav .mail,
+.auth-nav .phone,
+.site-nav .link-current {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.site-nav .link-current {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.link-current:hover,
+.link-current:focus {
+  color: var(--accent-color);
+}
+.auth-nav .mail,
+.auth-nav .phone {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.auth-nav .mail:focus,
+.auth-nav .phone:focus,
+.auth-nav .mail:hover,
+.auth-nav .phone:hover {
+  color: var(--accent-color);
+}
+/* conteiner */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* hero */
+.hero {
+  text-align: center;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--text-white-color);
+  background-color: var(--hero-background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+}
+.hero-button {
+  display: inline-block;
+
+  border-radius: 4px;
+  border: 4px transparent;
+  color: var(--text-white-color);
+  background-color: var(--background-button);
+  padding: 10px 32px;
+  min-width: 130px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: var(--text-white-color);
+}
+
+/* section */
+.section .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+/* Features */
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* works team */
+.works-title,
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+.team-item {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+}
+.description {
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+/* текст подвал */
+.footer {
+  background-color: var(--hero-background-color);
+  width: 1600px;
+  height: 252px;
+}
+.footer .logo {
+  color: var(--text-white-color);
+  
+}
+.footer .logo:hover {
+  color: var(--accent-color);
+}
+.footer-address,
+.footer-mail,
+.footer-phone {
+  color: var(--text-white-color);
+  /* font-family: inherit; */
+  font-style: normal;
+  /* font-weight: normal; */
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-mail,
+.footer-phone {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  text-decoration: none;
+}
+
+.footer-mail:hover,
+.footer-phone:hover,
+.footer-mail:focus,
+.footer-phone:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* portfolio */
+.buttons {
+  color: var(--title-text-color);
+  background-color: var(--filter-background);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  cursor: pointer;
+}
+.buttons:hover,
+.buttons:focus {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+}
+
+.filter-list .title {
+  font-style: inherit;
+  font-size: 18px;
+  line-height: 2;
+}
+/* .button .buttons {
+  position: absolute;
+  width: 611px;
+  height: 54px;
+  left: 495px;
+  top: 174px; */
+}
+.filter-item {
+  font-size: 16px;
+  line-height: 1.8;
+}
