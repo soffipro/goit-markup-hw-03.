@@ -284,7 +284,7 @@ padding-bottom: 94px;
   display: flex;
   text-decoration: none;
 }
-.footer-logo:hover {
+.footer .logo:hover {
   color: var(--accent-color);
 }
 .footer-address,
