@@ -3,9 +3,9 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --background-button: #188ce8;
-  --text-white-color: #ffffff;
+  --white-color: #ffffff;
 
-  --background-color: #ffffff;
+  --background-color: #e5e5e5;
   --hero-background-color: #2f303a;
   --second-accent-color: #000000;
   --filter-background: #f5f4fa;
@@ -20,7 +20,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: var(--background-color);
+  background-color: var(--white-color);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -42,6 +42,15 @@ margin-bottom: 0;
 img {
   display: block;
 }
+
+/* ----------conteiner--------------- */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* site nav */
 .logo {
   color: var(--second-accent-color);
@@ -60,13 +69,14 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px;
-  border-color: #ECECEC;
+  
+  
   
 }
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 2px solid #ECECEC;
 }
 /* ------------main  NAV----------------- */
 .main-nav {
@@ -113,9 +123,6 @@ img {
   display: flex;
   margin-left: auto;
   align-items: center;
-
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -131,15 +138,6 @@ img {
 .auth-nav .phone:hover {
   color: var(--accent-color);
 }
-/* ----------conteiner--------------- */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-}
 
 /* ------------HERO----------------- */
 .hero {
@@ -148,26 +146,25 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
   background-color: var(--hero-background-color);
+  border: 1px solid #ECECEC;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  color: var(--text-white-color);
+  color: var(--white-color);
   background-color: var(--hero-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
-  
 }
 .hero-button {
   display: inline-block;
   border-radius: 4px;
   border: 4px transparent;
   /* padding: 10px 32px; */
-  color: var(--text-white-color);
+  color: var(--white-color);
   background-color: var(--background-button);
   width: 200px;
   height: 50px;
@@ -180,13 +177,13 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   color: var(--accent-color);
-  background-color: var(--text-white-color);
+  background-color: var(--white-color);
 }
 
 /* ------------SECTION----------------- */
 .section {
-  margin-bottom: 94px;
-}
+padding: 94px 215px;
+} 
 .section .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -195,7 +192,9 @@ img {
 }
 
 /* ---------------FETURES-------------- */
-
+.section-feature {
+padding: 94px 215px;
+}
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -207,22 +206,18 @@ img {
 .feature-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  
+  flex-wrap: nowrap; 
 }
 .feature-list .item {
   width: 270px;
   margin-right: 30px;
-  
 }
   .feature-list .item:last-child {
   margin-right: 0px;
 }
-
 /* ---------------WORK -------------- */
-.section .works {
-  padding-top: 0;
-  
+.works {
+padding-bottom: 94px;
 }
 .works-title,
 .team-title {
@@ -231,13 +226,11 @@ img {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 50px;
- 
+  margin-bottom: 50px;
 }
 .works-list {
   display: flex;
   justify-content: space-between;
-  
 }
 /* ------------TEAM--------- */
 .team {
@@ -246,13 +239,14 @@ img {
   padding-bottom: 94px;
   background-color: #F5F4FA;
   margin-bottom: 0;
-  
 }
-
 .team-card {
   margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px
+   rgba(0, 0, 0, 0.12),
+   0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-card:last-child {
   margin-right: 0px;
@@ -261,7 +255,6 @@ img {
   display: flex;
 }
 .team-wrap {
-  background: #F5F4FA;
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -273,7 +266,6 @@ img {
   line-height: 1.1;
   margin-bottom: 10px;
   text-align: center;
-
 }
 .description {
   font-size: 16px;
@@ -286,23 +278,23 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer .logo {
-  color: var(--text-white-color);
+  color: var(--white-color);
   margin-bottom: 20px;
+  display: flex;
+  text-decoration: none;
 }
-.footer .logo:hover {
+.footer-logo:hover {
   color: var(--accent-color);
 }
 .footer-address,
 .footer-mail,
 .footer-phone {
-  color: var(--text-white-color);
+  color: var(--white-color);
   font-style: normal;
 
   font-size: 14px;
   line-height: 1.7;
-
 }
 .footer-mail,
 .footer-phone {
@@ -310,14 +302,12 @@ img {
   display: block;
   text-decoration: none;
 }
-
 .footer-mail:hover,
 .footer-phone:hover,
 .footer-mail:focus,
 .footer-phone:focus {
   color: var(--accent-color);
 }
-  
 .footer-address,
 .footer-mail {
   margin-bottom: 9px;
@@ -331,25 +321,21 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  margin-right: 8px;
-  margin-bottom: 50px;
-  margin-top: 94px;
+   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
- 
-
-  min-width: 128px;
   min-height: 38px;
   cursor: pointer;
 }
 .buttons:hover,
 .buttons:focus {
-  color: var(--text-white-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 .buttons-filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
 /* ----------------FILTER----------- */
 .filter-list .title {
@@ -364,7 +350,8 @@ img {
 }
 .filter-wrap {
   padding: 20px 24px;
-
+  border: 1px solid #EEEEEE;
+  border-top: 0px;
 }
 .filter-list {
   display: flex;
@@ -379,6 +366,7 @@ img {
   margin-bottom: 30px;
   width: 370px;
   width: calc((100% - 2 * 30px) / 3);
+  
 }
 .filter-item:nth-child(3n) {
   margin-right: 0;
