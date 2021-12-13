@@ -182,7 +182,8 @@ img {
 
 /* ------------SECTION----------------- */
 .section {
-padding: 94px 215px;
+padding: 94px 0px;
+
 } 
 .section .title {
   color: var(--title-text-color);
@@ -193,7 +194,7 @@ padding: 94px 215px;
 
 /* ---------------FETURES-------------- */
 .section-feature {
-padding: 94px 215px;
+padding: 94px 0px;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -217,7 +218,7 @@ padding: 94px 215px;
 }
 /* ---------------WORK -------------- */
 .works {
-padding-bottom: 94px;
+padding-top: 0px;
 }
 .works-title,
 .team-title {
@@ -327,6 +328,12 @@ padding-bottom: 94px;
   min-height: 38px;
   cursor: pointer;
 }
+.btn-item {
+  margin-right: 8px;
+}
+.btn-item:last-child {
+  margin-right: 0px;
+}
 .buttons:hover,
 .buttons:focus {
   color: var(--white-color);
@@ -335,8 +342,9 @@ padding-bottom: 94px;
 .buttons-filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
+
 /* ----------------FILTER----------- */
 .filter-list .title {
   color: var(--title-text-color);
@@ -361,12 +369,10 @@ padding-bottom: 94px;
   width: 370px;
   font-size: 16px;
   line-height: 1.8;
-
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
   width: calc((100% - 2 * 30px) / 3);
-  
 }
 .filter-item:nth-child(3n) {
   margin-right: 0;
